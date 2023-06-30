@@ -1,7 +1,7 @@
 service: miranda-backend
 provider:
   name: aws
-  region: eu-west-1
+  region: eu-south-2
   environment:
     SECRET: "secret"
     MYSQL_HOST: "aws.connect.psdb.cloud"
