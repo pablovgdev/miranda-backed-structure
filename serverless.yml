@@ -1,9 +1,16 @@
 service: miranda-backend
+frameworkVersion: "3"
+package:
+  patterns:
+    - "!./**"
+    - "package.json"
+    - "node_modules/**"
+    - "dist/**"
 provider:
   name: aws
-  region: eu-south-2
+  region: eu-west-1
   environment:
-    SECRET: "secret"
+    SECRET: ${file(.env.json):SECRET}
   runtime: nodejs18.x
 functions:
   app:

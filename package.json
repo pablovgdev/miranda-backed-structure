@@ -6,9 +6,8 @@
   "scripts": {
     "dev": "ts-node-dev src/server.ts",
     "start": "node dist/server.js",
-    "build": "npm ci && rm -rf dist && tsc",
-    "build:prod": "npm run build && rm -rf node_modules && npm i --omit=dev",
-    "deploy": "npm run build:prod && serverless deploy --force && npm run build",
+    "build": "rm -rf dist && tsc",
+    "deploy": "npm run build && serverless deploy --force",
     "test": "jest --coverage --verbose"
   },
   "keywords": [],
