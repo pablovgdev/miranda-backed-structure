@@ -20,8 +20,6 @@ public/css/main.css
 coverage
 
 # API keys and secrets
-.env
-.env.json
 
 # Dependency directory
 node_modules
@@ -40,5 +38,3 @@ dist/**/*
 
 # ignore yarn.lock
 yarn.lock
-
-.serverless
